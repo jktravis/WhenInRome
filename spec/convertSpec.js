@@ -21,32 +21,93 @@ describe('When passed a decimal', function()
         expect(rome.convert(4)).toBe('IV');
     });
 
+    it("of value 5 should return a Roman numeral", function()
+    {
+        expect(rome.convert(5)).toBe('V');
+    });
+
+    it("of value 6 should return a Roman numeral", function()
+    {
+        expect(rome.convert(6)).toBe('VI');
+    });
+
     it("of value 7 should return a Roman numeral", function()
     {
         expect(rome.convert(7)).toBe('VII');
     });
 
-});
+    it("of value 8 should return a Roman numeral", function()
+    {
+        expect(rome.convert(8)).toBe('VIII');
+    });
 
-// "'I' === 1: " + ('I' === convert(1)) + '. Value was: ' + convert(1) );
-// "'II' === 2: " + ('II' === convert(2)) + '. Value was: ' + convert(2) );
-// "'III' === 3: " + ('III' === convert(3)) + '. Value was: ' + convert(3) );
-// "'IV' === 4: " + ('IV' === convert(4)) + '. Value was: ' + convert(4) );
-// "'V' === 5: " + ('V' === convert(5)) + '. Value was: ' + convert(5) );
-// "'VI' === 6: " + ('VI' === convert(6)) + '. Value was: ' + convert(6) );
-// "'VII' === 7: " + ('VII' === convert(7)) + '. Value was: ' + convert(7) );
-// "'VIII' === 8: " + ('VIII' === convert(8)) + '. Value was: ' + convert(8) );
-// "'IX' === 9: " + ('IX' === convert(9)) + '. Value was: ' + convert(9) );
-// "'X' === 10: " + ('X' === convert(10)) + '. Value was: ' + convert(10) );
-// "'XI' === 11: " + ('XI' === convert(11)) + '. Value was: ' + convert(11) );
-// "'XII' === 12: " + ('XII' === convert(12)) + '. Value was: ' + convert(12) );
-// "'XIII' === 13: " + ('XIII' === convert(13)) + '. Value was: ' + convert(13) );
-// "'XIV' === 14: " + ('XIV' === convert(14)) + '. Value was: ' + convert(14) );
-// "'XV' === 15: " + ('XV' === convert(15)) + '. Value was: ' + convert(15) );
-// "'XVI' === 16: " + ('XVI' === convert(16)) + '. Value was: ' + convert(16) );
-// "'XVII' === 17: " + ('XVII' === convert(17)) + '. Value was: ' + convert(17) );
-// "'XVIII' === 18: " + ('XVIII' === convert(18)) + '. Value was: ' + convert(18) );
-// "'XIX' === 19: " + ('XIX' === convert(19)) + '. Value was: ' + convert(19) );
-// "'XX' === 20: " + ('XX' === convert(20)) + '. Value was: ' + convert(20) );
-// "'XXXVI' === 36: " + ('XXXVI' === convert(36)) + '. Value was: ' + convert(36) );
-// "'LXI' === 61: " + ('LXI' === convert(61)) + '. Value was: ' + convert(61) );
+    it("of value 9 should return a Roman numeral", function()
+    {
+        expect(rome.convert(9)).toBe('IX');
+    });
+
+    it("of value 10 should return a Roman numeral", function()
+    {
+        expect(rome.convert(10)).toBe('X');
+    });
+
+    it("of value 11 should return a Roman numeral", function()
+    {
+        expect(rome.convert(11)).toBe('XI');
+    });
+
+    it("of value 12 should return a Roman numeral", function()
+    {
+        expect(rome.convert(12)).toBe('XII');
+    });
+
+    it("of value 13 should return a Roman numeral", function()
+    {
+        expect(rome.convert(13)).toBe('XIII');
+    });
+
+    it("of value 14 should return a Roman numeral", function()
+    {
+        expect(rome.convert(14)).toBe('XIV');
+    });
+
+    it("of value 15 should return a Roman numeral", function()
+    {
+        expect(rome.convert(15)).toBe('XV');
+    });
+
+    it("of value 16 should return a Roman numeral", function()
+    {
+        expect(rome.convert(16)).toBe('XVI');
+    });
+
+    it("of value 17 should return a Roman numeral", function()
+    {
+        expect(rome.convert(17)).toBe('XVII');
+    });
+
+    it("of value 18 should return a Roman numeral", function()
+    {
+        expect(rome.convert(18)).toBe('XVIII');
+    });
+
+    it("of value 19 should return a Roman numeral", function()
+    {
+        expect(rome.convert(19)).toBe('XIX');
+    });
+
+    it("of value 20 should return a Roman numeral", function()
+    {
+        expect(rome.convert(20)).toBe('XX');
+    });
+
+    it("of value 36 should return a Roman numeral", function()
+    {
+        expect(rome.convert(36)).toBe('XXXVI');
+    });
+
+    it("of value 61 should return a Roman numeral", function()
+    {
+        expect(rome.convert(61)).toBe('LXI');
+    });
+});
