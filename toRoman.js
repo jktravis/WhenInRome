@@ -34,11 +34,20 @@ exports.convert = function (num)
                         var newIter = diff / romanNumerals[i - 1][i];
                         console.log('diff: ' + diff);
                         console.log('newIter: ' + newIter);
-                        for (j = 0; j < newIter; j++)
+
+                        if (newIter > 3)
                         {
-                            console.log('Adding digit: ' + romanNumerals[i - 1][0]);
-                            converted.unshift(romanNumerals[i - 1][0]);
+
                         }
+                        else
+                        {
+                            for (j = 0; j < newIter; j++)
+                            {
+                                console.log('Adding lesser digit: ' + romanNumerals[i - 1][0]);
+                                converted.unshift(romanNumerals[i - 1][0]);
+                            }
+                        }
+
                     }
 
                     for (var j = 0; j < Math.floor(symbolIter); j++)
