@@ -110,4 +110,9 @@ describe('When passed a decimal', function()
     {
         expect(rome.convert(61)).toBe('LXI');
     });
+
+    it("of value 71 should return a Roman numeral", function()
+    {
+        expect(rome.convert(71)).toBe('LXXI');
+    });
 });
