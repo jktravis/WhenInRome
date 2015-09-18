@@ -31,7 +31,8 @@ exports.convert = function (num)
                     {
                         console.log('symbolIter % 1 !== 0: ' + (symbolIter % 1 !== 0));
                         var diff = r - romanNumerals[i][1];
-                        var newIter = diff / romanNumerals[i - 1][i];
+                        var newIter = diff / romanNumerals[i - 1][1];
+                        console.log('prev number: ' + romanNumerals[i - 1][1]);
                         console.log('diff: ' + diff);
                         console.log('newIter: ' + newIter);
 
