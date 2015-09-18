@@ -36,6 +36,12 @@
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToDo</h3>
 
 <p>Currently only works for numbers less than 1000. I just need to add a condition for it, but I was so excited I got it working, I just had to push!</p>
+    <h3><a id="demo" class="anchor" href="#demo" aria-hidden"true"><span class"octicon octicon-link"></a>Demo</h3>
+    <form action="#">
+      <input id="toConvert" type="text" autocomplete="off" placeholder="Your decimal"/>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="demo-display"></div>
       </section>
     </div>
     <footer>
@@ -44,5 +50,20 @@
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
+    <script>
+      var exports = {};
+    </script>
+    <script src="https://raw.githubusercontent.com/jktravis/WhenInRome/master/toRoman.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $('button').click(function(event)
+      {
+        event.preventDefault();
+        var $toConvert = $('#toConvert').val();
+        var $demoDisplay = $('#demo-display');
+        $demoDisplay.empty();
+        $demoDisplay.html('<p>Results: ' + exports.convert(parseInt($toConvert)) + '</p>');
+      })
+    </script>
   </body>
 </html>
