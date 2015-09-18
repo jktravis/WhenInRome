@@ -101,6 +101,11 @@ describe('When passed a decimal', function()
         expect(rome.convert(20)).toBe('XX');
     });
 
+    it("of value 39 should return a Roman numeral", function()
+    {
+        expect(rome.convert(39)).toBe('XXXIX');
+    });
+
     it("of value 36 should return a Roman numeral", function()
     {
         expect(rome.convert(36)).toBe('XXXVI');
@@ -114,5 +119,10 @@ describe('When passed a decimal', function()
     it("of value 71 should return a Roman numeral", function()
     {
         expect(rome.convert(71)).toBe('LXXI');
+    });
+
+    it("of value 989 should return a Roman numeral", function()
+    {
+        expect(rome.convert(989)).toBe('CMLXXXIX');
     });
 });
