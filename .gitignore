@@ -1,3 +1,4 @@
 *.swp
 node_modules/
-dist/
+/dist/javascripts/bundle.js
+/dist/javascripts/bundle.js.map

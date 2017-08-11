@@ -18,7 +18,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint src/**/*.js",
-    "build": "webpack"
+    "build": "webpack",
+    "build:watch": "npm run build -- --watch"
   },
   "author": "jktravis",
   "license": "MIT"

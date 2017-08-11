@@ -2,7 +2,7 @@ module.exports = {
   devtool: 'source-maps',
   entry: './src/app',
   output: {
-    filename: './dist/bundle.js',
+    filename: './dist/javascripts/bundle.js',
   },
   module: {
     rules: [
