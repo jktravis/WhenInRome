@@ -3,10 +3,10 @@ function convert(num) {
   // Declare matrix;
   const romanNumerals = [
     ['I', 1], ['V', 5], ['X', 10], ['L', 50],
-    ['C', 100], ['D', 500], ['M', 1000]
+    ['C', 100], ['D', 500], ['M', 1000],
   ];
 
-  let numCopy = num; //preserve the original number.
+  let numCopy = num; // preserve the original number.
   let remainder;
   const converted = []; // Array to hold the characters for the new string.
   let modVal = 10; // initial divisor.
@@ -28,7 +28,7 @@ function convert(num) {
             newIter = diff / romanNumerals[i - 1][1];
 
             if (newIter <= 3) {
-              for (j = 0; j < newIter; j++) {
+              for (let j = 0; j < newIter; j++) {
                 converted.unshift(romanNumerals[i - 1][0]);
               }
             }
@@ -37,16 +37,14 @@ function convert(num) {
           if (newIter > 3) {
             converted.unshift(romanNumerals[i + 1][0]);
             converted.unshift(romanNumerals[i - 1][0]);
-          }
-          else {
-            for (var j = 0; j < Math.floor(symbolIter); j++) {
+          } else {
+            for (let j = 0; j < Math.floor(symbolIter); j++) {
               converted.unshift(romanNumerals[i][0]);
             }
           }
-        }
-        else {
-          converted.unshift(romanNumerals[i + 1][0])
-          converted.unshift(romanNumerals[i][0])
+        } else {
+          converted.unshift(romanNumerals[i + 1][0]);
+          converted.unshift(romanNumerals[i][0]);
         }
       }
     }
