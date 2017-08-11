@@ -1,4 +1,4 @@
-var rome = require('../toRoman.js');
+var rome = require('./toRoman.js');
 describe('When passed a decimal', function()
 {
     it("of value 1 should return a Roman numeral", function()
