@@ -354,3 +354,11 @@ footer p + p {
     content: 'at https://github.com/';
   }
 }
+
+.fade {
+  transition: opacity .25s ease-in-out ;
+}
+
+.fade-out {
+  opacity: 0.0;
+}

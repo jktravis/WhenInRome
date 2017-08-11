@@ -30,18 +30,17 @@
         <h3>
 <a id="wheninrome-decimal-to-roman-numeral-converter" class="anchor" href="#wheninrome-decimal-to-roman-numeral-converter" aria-hidden="true"><span class="octicon octicon-link"></span></a>WhenInRome Decimal to Roman Numeral Converter.</h3>
 
-<p>This is my solution to the <a href="http://freecodecamp.com/challenges/bonfire-roman-numeral-converter">FreeCodeCamp Bonfire challenge</a>. Check out <a href="https://github.com/FreeCodeCamp" class="user-mention">@FreeCodeCamp</a>. </p>
+        <p>This is a simple Decimal to Roman Numeral converter. </p>
 
 <h3>
-<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToDo</h3>
-
-<p>Currently only works for numbers less than 1000. I just need to add a condition for it, but I was so excited I got it working, I just had to push!</p>
     <h3><a id="demo" class="anchor" href="#demo" aria-hidden"true"><span class"octicon octicon-link"></a>Demo</h3>
-    <form action="#">
-      <input id="toConvert" type="text" autocomplete="off" placeholder="Your decimal"/>
+    <form>
+      <input id="toConvert" type="number" autocomplete="off" placeholder="1 - 999"/>
       <button type="submit">Convert</button>
     </form>
-    <div id="demo-display"></div>
+    <div id="demo-display">
+      <p class="fade">Results: </p>
+    </div>
       </section>
     </div>
     <footer>
@@ -49,21 +48,7 @@
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-    <script>
-      var exports = {};
-    </script>
-    <script src="https://raw.githubusercontent.com/jktravis/WhenInRome/master/toRoman.js"></script>
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-      $('button').click(function(event)
-      {
-        event.preventDefault();
-        var $toConvert = $('#toConvert').val();
-        var $demoDisplay = $('#demo-display');
-        $demoDisplay.empty();
-        $demoDisplay.html('<p>Results: ' + exports.convert(parseInt($toConvert)) + '</p>');
-      })
-    </script>
+
+    <script src="javascripts/bundle.js"></script>
   </body>
 </html>
